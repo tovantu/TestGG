@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11042" started-at="2018-07-12T07:41:25Z" finished-at="2018-07-12T07:41:36Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="11042" started-at="2018-07-12T07:41:25Z" finished-at="2018-07-12T07:41:36Z">
+      <class name="com.qa.testcase.LoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.testcase.LoginPageTest@5622fdf]" name="setup" is-config="true" duration-ms="10149" started-at="2018-07-12T07:41:25Z" finished-at="2018-07-12T07:41:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkLinkNextTest()[pri:2, instance:com.qa.testcase.LoginPageTest@5622fdf]" name="checkLinkNextTest" duration-ms="75" started-at="2018-07-12T07:41:35Z" finished-at="2018-07-12T07:41:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLinkNextTest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.qa.testcase.LoginPageTest@5622fdf]" name="after" is-config="true" duration-ms="783" started-at="2018-07-12T07:41:35Z" finished-at="2018-07-12T07:41:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.qa.testcase.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

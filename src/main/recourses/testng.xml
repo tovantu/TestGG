@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Session Test Automation Suite">
+	<test name="Testng Feature Test">
+		<classes>
+			<!-- <class name="com.qa.testcase.HomePageTest"/> -->
+			<class name="com.qa.testcase.LoginPageTest"/>
+		</classes>
+	</test>
+</suite>

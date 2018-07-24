@@ -9,6 +9,8 @@
 
 	<name>TestGG</name>
 	<url>http://maven.apache.org</url>
+
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -26,7 +28,7 @@
 			<version>6.14.3</version>
 			<scope>compile</scope>
 		</dependency>
-		
+
 
 		<!-- apache -->
 		<dependency>
@@ -93,10 +95,19 @@
 			<artifactId>openxml4j</artifactId>
 			<version>1.0-beta</version>
 		</dependency>
+
+		<!-- File util -->
 		<dependency>
 			<groupId>org.apache.directory.studio</groupId>
 			<artifactId>org.apache.commons.io</artifactId>
 			<version>2.4</version>
+		</dependency>
+		<!-- apache commons -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-compress</artifactId>
+			<version>1.0</version>
+			<scope>compile</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
 		<dependency>

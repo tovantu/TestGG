@@ -2,23 +2,23 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="TestNG Session Test Automation Suite" duration-ms="7690" started-at="2018-07-20T12:27:45Z" finished-at="2018-07-20T12:27:52Z">
+  <suite name="TestNG Session Test Automation Suite" duration-ms="7594" started-at="2018-07-24T07:44:31Z" finished-at="2018-07-24T07:44:39Z">
     <groups>
       <group name="Homepage">
-        <method signature="HomePageTest.pageTitleTest()[pri:1, instance:com.qa.testcase.HomePageTest@490ab905]" name="pageTitleTest" class="com.qa.testcase.HomePageTest"/>
+        <method signature="HomePageTest.pageTitleTest()[pri:1, instance:com.qa.testcases.HomePageTest@3f49dace]" name="pageTitleTest" class="com.qa.testcases.HomePageTest"/>
       </group> <!-- Homepage -->
     </groups>
-    <test name="Testng Feature Test" duration-ms="7690" started-at="2018-07-20T12:27:45Z" finished-at="2018-07-20T12:27:52Z">
-      <class name="com.qa.testcase.HomePageTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.qa.testcase.HomePageTest@490ab905]" name="beforeTest" is-config="true" duration-ms="162" started-at="2018-07-20T12:27:45Z" finished-at="2018-07-20T12:27:45Z">
+    <test name="Testng Feature Test" duration-ms="7594" started-at="2018-07-24T07:44:31Z" finished-at="2018-07-24T07:44:39Z">
+      <class name="com.qa.testcases.HomePageTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.qa.testcases.HomePageTest@3f49dace]" name="beforeTest" is-config="true" duration-ms="204" started-at="2018-07-24T07:44:31Z" finished-at="2018-07-24T07:44:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcase.HomePageTest@490ab905]" name="setUp" is-config="true" duration-ms="5946" started-at="2018-07-20T12:27:45Z" finished-at="2018-07-20T12:27:51Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.HomePageTest@3f49dace]" name="setUp" is-config="true" duration-ms="5784" started-at="2018-07-24T07:44:32Z" finished-at="2018-07-24T07:44:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="pageTitleTest()[pri:1, instance:com.qa.testcase.HomePageTest@490ab905]" name="pageTitleTest" duration-ms="30" started-at="2018-07-20T12:27:51Z" finished-at="2018-07-20T12:27:51Z">
+        <test-method status="FAIL" signature="pageTitleTest()[pri:1, instance:com.qa.testcases.HomePageTest@3f49dace]" name="pageTitleTest" duration-ms="19" started-at="2018-07-24T07:44:37Z" finished-at="2018-07-24T07:44:37Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Googlea] but found [Google]]]>
@@ -31,7 +31,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:453)
 at org.testng.Assert.assertEquals(Assert.java:463)
-at com.qa.testcase.HomePageTest.pageTitleTest(HomePageTest.java:59)
+at com.qa.testcases.HomePageTest.pageTitleTest(HomePageTest.java:59)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -63,22 +63,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageTitleTest -->
-        <test-method status="PASS" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.testcase.HomePageTest@490ab905]" name="AfterMethod" is-config="true" duration-ms="1106" started-at="2018-07-20T12:27:51Z" finished-at="2018-07-20T12:27:52Z">
+        <test-method status="PASS" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.HomePageTest@3f49dace]" name="AfterMethod" is-config="true" duration-ms="1116" started-at="2018-07-24T07:44:37Z" finished-at="2018-07-24T07:44:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=pageTitleTest status=FAILURE method=HomePageTest.pageTitleTest()[pri:1, instance:com.qa.testcase.HomePageTest@490ab905] output={null}]]]>
+                <![CDATA[[TestResult name=pageTitleTest status=FAILURE method=HomePageTest.pageTitleTest()[pri:1, instance:com.qa.testcases.HomePageTest@3f49dace] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method status="PASS" signature="AfterTest()[pri:0, instance:com.qa.testcase.HomePageTest@490ab905]" name="AfterTest" is-config="true" duration-ms="423" started-at="2018-07-20T12:27:52Z" finished-at="2018-07-20T12:27:52Z">
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:com.qa.testcases.HomePageTest@3f49dace]" name="AfterTest" is-config="true" duration-ms="443" started-at="2018-07-24T07:44:38Z" finished-at="2018-07-24T07:44:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterTest -->
-      </class> <!-- com.qa.testcase.HomePageTest -->
+      </class> <!-- com.qa.testcases.HomePageTest -->
     </test> <!-- Testng Feature Test -->
   </suite> <!-- TestNG Session Test Automation Suite -->
 </testng-results>

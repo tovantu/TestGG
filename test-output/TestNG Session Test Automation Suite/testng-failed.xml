@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG Session Test Automation Suite]">
   <test thread-count="5" name="Testng Feature Test(failed)">
     <classes>
-      <class name="com.qa.testcase.HomePageTest">
+      <class name="com.qa.testcases.HomePageTest">
         <methods>
+          <include name="beforeTest"/>
           <include name="AfterMethod"/>
+          <include name="setUp"/>
           <include name="pageTitleTest"/>
           <include name="AfterTest"/>
-          <include name="beforeTest"/>
-          <include name="setUp"/>
         </methods>
-      </class> <!-- com.qa.testcase.HomePageTest -->
+      </class> <!-- com.qa.testcases.HomePageTest -->
     </classes>
   </test> <!-- Testng Feature Test(failed) -->
 </suite> <!-- Failed suite [TestNG Session Test Automation Suite] -->

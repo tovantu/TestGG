@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-TestNG_Session_Test_Automation_Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Session_Test_Automation_Suite" title="com.qa.testcase.HomePageTest" hash-for-method="pageTitleTest">pageTitleTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Session_Test_Automation_Suite" title="com.qa.testcases.HomePageTest" hash-for-method="pageTitleTest">pageTitleTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-TestNG_Session_Test_Automation_Suite -->
@@ -120,7 +120,7 @@
           <div class="suite-TestNG_Session_Test_Automation_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.qa.testcase.HomePageTest</span>
+              <span class="class-name">com.qa.testcases.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -129,7 +129,7 @@
                   </a> <!-- pageTitleTest -->
                   <span class="method-name">pageTitleTest</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [Googlea] but found [Google]
-	at com.qa.testcase.HomePageTest.pageTitleTest(HomePageTest.java:59)
+	at com.qa.testcases.HomePageTest.pageTitleTest(HomePageTest.java:59)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -148,7 +148,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;TestNG Session Test Automation Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Testng Feature Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.testcase.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.testcases.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Testng Feature Test --&gt;
 &lt;/suite&gt; &lt;!-- TestNG Session Test Automation Suite --&gt;
@@ -199,13 +199,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'pageTitleTest')
-data.setCell(0, 2, 'com.qa.testcase.HomePageTest')
-data.setCell(0, 3, 30);
+data.setCell(0, 2, 'com.qa.testcases.HomePageTest')
+data.setCell(0, 3, 19);
 window.suiteTableData['TestNG_Session_Test_Automation_Suite']= { tableData: data, tableDiv: 'times-div-TestNG_Session_Test_Automation_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 ms</span>
+              <span class="suite-total-time">Total running time: 19 ms</span>
               <div id="times-div-TestNG_Session_Test_Automation_Suite">
               </div> <!-- times-div-TestNG_Session_Test_Automation_Suite -->
             </div> <!-- times-div -->
@@ -231,28 +231,28 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.testcase.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">175 ms</span>
+                <span class="method-start">218 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">pageTitleTest</span>
-                <span class="method-start">6121 ms</span>
+                <span class="method-start">6002 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">AfterMethod([TestResult name=pageTitleTest status=FAILURE method=HomePageTest.pageTitleTest()[pri:1, instance:co...)</span>
-                <span class="method-start">6156 ms</span>
+                <span class="method-start">6026 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">AfterTest</span>
-                <span class="method-start">7264 ms</span>
+                <span class="method-start">7146 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

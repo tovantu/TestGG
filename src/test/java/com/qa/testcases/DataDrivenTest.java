@@ -1,4 +1,4 @@
-package com.qa.testcase;
+package com.qa.testcases;
 
 import java.util.ArrayList;
 import java.util.Iterator;

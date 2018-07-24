@@ -18,7 +18,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 
-import com.qa.testcase.HomePageTest;
+import com.qa.testcases.HomePageTest;
 import com.qa.util.TestUtil;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -67,7 +67,7 @@ public class TestBase {
 	// Extend report screenshot
 	//Before test
 	public static void setExtent(){
-		extent = new ExtentReports(System.getProperty("user.dir")+"/test-output/CustomExtentReport.html", true);
+		extent = new ExtentReports("ExtentReport/CustomExtentReport.html", true);
 		extent.addSystemInfo("Host Name", "ToTuAdmin");
 		extent.addSystemInfo("User Name", "ToTu");
 		extent.addSystemInfo("Environment", "QA");
@@ -83,7 +83,11 @@ public class TestBase {
 		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/" + screenshotName + dateName
+		
+//		String destination = "ExtentReport/FailedTestsScreenshots/" + screenshotName + dateName
+//				+ ".png";
+		
+		String destination = System.getProperty("user.dir")+"/ExtentReport/FailedTestsScreenshots/" + screenshotName + dateName
 				+ ".png";
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);

@@ -9,8 +9,8 @@
 	</listeners> -->
 	<test name="Testng Feature Test">
 		<classes>
-			<class name="com.qa.testcase.HomePageTest"/>
-			<class name="com.qa.testcase.LoginPageTest"/>
+			<class name="com.qa.testcases.HomePageTest"/>
+			<!-- <class name="com.qa.testcases.LoginPageTest"/> -->
 		</classes>
 	</test>
 </suite>

@@ -1,4 +1,4 @@
-package com.qa.testcase;
+package com.qa.testcases;
 
 import java.io.File;
 import java.util.HashMap;

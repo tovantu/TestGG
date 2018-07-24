@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestNG Session Test Automation Suite">
-	<!-- <listeners>
+	<listeners>
 		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
-	</listeners> -->
+	</listeners>
 	<!-- <listeners>
 		<listener class-name="Analyzer.MyTransformer"></listener>
 	</listeners> -->
 	<test name="Testng Feature Test">
 		<classes>
 			<class name="com.qa.testcase.HomePageTest"/>
-			<!-- <class name="com.qa.testcase.LoginPageTest"/> -->
+			<class name="com.qa.testcase.LoginPageTest"/>
 		</classes>
 	</test>
 </suite>

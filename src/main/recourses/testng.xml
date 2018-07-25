@@ -13,4 +13,5 @@
 			<!-- <class name="com.qa.testcases.LoginPageTest"/> -->
 		</classes>
 	</test>
+	
 </suite>

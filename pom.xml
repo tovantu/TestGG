@@ -14,7 +14,17 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
+	<!-- <build>
+		<resources>
+			<resource>
+				<directory>src/test/java</directory>
+			</resource>
+			<resource>
+				<directory>src/main/recourses</directory>
+			</resource>
+		</resources>
+		
+	</build> -->
 	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -27,6 +37,12 @@
 			<artifactId>testng</artifactId>
 			<version>6.14.3</version>
 			<scope>compile</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.7.0</version>
 		</dependency>
 
 
@@ -103,12 +119,8 @@
 			<version>2.4</version>
 		</dependency>
 		<!-- apache commons -->
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-compress</artifactId>
-			<version>1.0</version>
-			<scope>compile</scope>
-		</dependency>
+		<!-- <dependency> <groupId>org.apache.commons</groupId> <artifactId>commons-compress</artifactId> 
+			<version>1.0</version> <scope>compile</scope> </dependency> -->
 		<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
 		<dependency>
 			<groupId>com.relevantcodes</groupId>

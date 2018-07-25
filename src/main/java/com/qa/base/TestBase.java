@@ -18,7 +18,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 
-import com.qa.testcases.HomePageTest;
+
+
 import com.qa.util.TestUtil;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -84,14 +85,14 @@ public class TestBase {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		
-//		String destination = "ExtentReport/FailedTestsScreenshots/" + screenshotName + dateName
-//				+ ".png";
-		
-		String destination = System.getProperty("user.dir")+"/ExtentReport/FailedTestsScreenshots/" + screenshotName + dateName
+		String destination = "ExtentReport/FailedTestsScreenshots/" + screenshotName + dateName
 				+ ".png";
+		
+//		String destination = System.getProperty("user.dir")+"/ExtentReport/FailedTestsScreenshots/" + screenshotName + dateName
+//				+ ".png";
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);
-		return destination;
+		return destination.replace("ExtentReport", ".");
 	}
 	//After menthod
 	public void tearDown(ITestResult result) throws IOException{
@@ -99,7 +100,7 @@ public class TestBase {
 			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS "+result.getName()); //to add name in extent report
 			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS "+result.getThrowable()); //to add error/exception in extent report
 			
-			String screenshotPath = HomePageTest.getScreenshot(driver, result.getName());
+			String screenshotPath = TestBase.getScreenshot(driver, result.getName());
 			extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath)); //to add screenshot in extent report
 			//extentTest.log(LogStatus.FAIL, extentTest.addScreencast(screenshotPath)); //to add screencast/video in extent report
 		}

@@ -4,7 +4,8 @@
   <listeners>
     <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="Testng Feature Test(failed)">
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.qa.testcases.HomePageTest">
         <methods>
@@ -16,5 +17,19 @@
         </methods>
       </class> <!-- com.qa.testcases.HomePageTest -->
     </classes>
-  </test> <!-- Testng Feature Test(failed) -->
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FireFoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.qa.testcases.HomePageTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="AfterMethod"/>
+          <include name="setUp"/>
+          <include name="pageTitleTest"/>
+          <include name="AfterTest"/>
+        </methods>
+      </class> <!-- com.qa.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- FireFoxTest(failed) -->
 </suite> <!-- Failed suite [TestNG Session Test Automation Suite] -->

@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.testcase.DataDrivenTest">
+      <class name="com.qa.testcases.ScreenShotFullPage">
         <methods>
-          <include name="testData"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- com.qa.testcase.DataDrivenTest -->
+      </class> <!-- com.qa.testcases.ScreenShotFullPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

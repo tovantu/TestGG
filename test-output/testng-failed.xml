@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG Session Test Automation Suite]">
-  <listeners>
-    <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
-  </listeners>
-  <test thread-count="5" name="Testng Feature Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.testcases.HomePageTest">
+      <class name="com.qa.testcases.ScreenShotFullPage">
         <methods>
-          <include name="beforeTest"/>
-          <include name="AfterMethod"/>
-          <include name="setUp"/>
-          <include name="pageTitleTest"/>
-          <include name="AfterTest"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- com.qa.testcases.HomePageTest -->
+      </class> <!-- com.qa.testcases.ScreenShotFullPage -->
     </classes>
-  </test> <!-- Testng Feature Test(failed) -->
-</suite> <!-- Failed suite [TestNG Session Test Automation Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

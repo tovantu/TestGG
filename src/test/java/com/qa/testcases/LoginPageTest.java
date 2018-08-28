@@ -18,6 +18,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.qa.base.TestBase;
@@ -67,6 +68,7 @@ public class LoginPageTest extends TestBase {
 		extentTest = extent.startTest("checkLinkNextTest");
 //		testUtil.switchToFrame();
 		Assert.assertTrue(loginPage.checkbtnNext());;
+		
 	}
 	
 //	@DataProvider
